@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "name": "Crossiant",
+    "imgURL": "img/items/item1.jpg",
+    "price": "2.50"
+  },
+  {
+    "id": 2,
+    "name": "Kaiser Rolls",
+    "imgURL": "img/items/item2.jpg",
+    "price": "1.80"
+  },
+  {
+    "id": 3,
+    "name": "French Baguets",
+    "imgURL": "img/items/item3.jpg",
+    "price": "4.50"
+  },
+  {
+    "id": 4,
+    "name": "Artisan Sourdough Loaf",
+    "imgURL": "img/items/item4.jpg",
+    "price": "7.50"
+  },
+  {
+    "id": 5,
+    "name": "Artisan Rye Loaf",
+    "imgURL": "img/items/item5.jpg",
+    "price": "6.50"
+  },
+  {
+    "id": 6,
+    "name": "Sandwich Rolls",
+    "imgURL": "img/items/item6.jpg",
+    "price": "1.25"
+  }
+
+]

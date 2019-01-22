@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+
+.jumbotron {
+  width: 100%;
+  heigh: 400px;
+}
+
+.mainImg {
+  background-image: url("../img/jumbotron.jpg");
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  top: 58px;
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  z-index: -2;
+}
+
+.mainImg img{
+  padding-top: 20px; 
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+
+  align-content: center;
+  width: 60%;
+}
+
+h2 {
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 5vw;
+  padding: 10px;
+  color: #ffcc66;
+}
+
+.headerContainerCenter img {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainImg img{
+    display: none;
+  }
+
+  .headerContainerCenter img {
+    display: flex;
+  }
+
+  h2 {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 15vw;
+  }
+}
