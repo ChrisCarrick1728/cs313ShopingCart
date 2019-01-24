@@ -1,10 +1,6 @@
 <?php
 session_start();
-
-
-
 ?>
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 <link rel="stylesheet" href="/css/header.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/nav.js" charset="utf-8"></script>
@@ -13,7 +9,6 @@ session_start();
     <div id="hamburgerButtonId" class="hamburgerButton">
 
     </div>
-
   </div>
   <div class="headerContainerLeft nav">
     <a href="index.php">Home</a>
@@ -23,6 +18,6 @@ session_start();
     <img src="../img/SVG/black_logo.svg" alt="" width="300px">
   </div>
   <div class="headerContainerRight nav">
-    <a href="viewCart.php">Cart – <span id="numCartItems"><?php if (isset($_SESSION['numItems'])) { echo "(" . $_SESSION['numItems'] . ") items"; } else { ?>0 items <?php } ?></span></a>
+    <a href="viewCart.php">Cart – (<span id="numCartItems"><?php if (isset($_SESSION['numItems'])) { echo $_SESSION['numItems']; } else { ?>0<?php } ?></span>) items</a>
   </div>
 </header>

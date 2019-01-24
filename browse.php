@@ -25,8 +25,8 @@
 
             </div>
             <p class="price">$ <?php echo $k['price']; ?></p>
-            <p class="addToCart">Add to Cart</p>
-            <input type="button" class="addToCartButton" name="button" value="+" id="<?php echo $k['id']; ?>">
+            <p class="addToCart"></p>
+            <input type="button" class="addToCartButton" name="button" value="+" id="<?php echo "add_{$k['id']}"; ?>">
           </div>
         </div>
       </div>

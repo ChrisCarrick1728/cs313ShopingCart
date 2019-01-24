@@ -1,0 +1,27 @@
+[
+  {
+    "cartTotal" : "6.80",
+    "numItems" : "3",
+    "cartItems":
+    [
+      {
+        "id" : "null",
+        "name" : "null",
+        "quantity" : "null",
+        "price" : "null"
+      },
+      {
+        "id" : "cartItem1",
+        "name" : "Croissant",
+        "quantity" : "2",
+        "price" : "2.50"
+      },
+      {
+        "id" : "cartItem2",
+        "name" : "Kaiser Rolls",
+        "quantity" : "1",
+        "price" : "1.80"
+      }
+    ]
+  }
+]
