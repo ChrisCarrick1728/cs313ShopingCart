@@ -84,7 +84,11 @@ p {
   justify-content: flex-end;
 }
 
-#checkoutButton, #emptyButton {
+#keepShopping {
+  margin-top: 20px;
+}
+
+#checkoutButton, #emptyButton, #keepShopping {
   height: 30px;
   background-color: #ffcc66;
   border: none;
@@ -93,7 +97,7 @@ p {
   margin-bottom: 20px;
 }
 
-#checkoutButton:hover, #emptyButton:hover {
+#checkoutButton:hover, #emptyButton:hover, #keepShopping:hover {
   box-shadow: 2px 2px 0px 0px #555;
 }
 

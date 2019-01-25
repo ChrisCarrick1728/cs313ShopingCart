@@ -16,6 +16,11 @@ include "php/setupCart.php";
   <body>
     <?php include 'components/header.php' ?>
     <?php include './php/getCartItems.php' ?>
+    <div class="cartCheckoutContainer">
+      <div class="checkoutButton">
+        <button type="button" name="button" id="keepShopping">Keep Shopping</button>
+      </div>
+    </div>
     <div class="cartContainer">
       <?php
         if ( isset($cart) ) {

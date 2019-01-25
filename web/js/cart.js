@@ -72,6 +72,10 @@ $('document').ready(function() {
     document.location.href = "checkout.php";
   })
 
+  $('#keepShopping').click(function() {
+    document.location.href = "browse.php";
+  })
+
 })
 
 function checkIfCartIsEmpty() {
