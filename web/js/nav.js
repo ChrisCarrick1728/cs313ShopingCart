@@ -9,7 +9,7 @@ $('document').ready(function() {
 })
 
 $(window).resize(function() {
-  if ($(this).width() > 600) {
+  if ($(this).width() > 700) {
     $(".nav").css("display", "flex");
   } else {
     $(".nav").css("display", "none");

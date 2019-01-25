@@ -18,7 +18,7 @@ include 'php/validateForm.php';
     <?php include './php/getCartItems.php' ?>
     <div class="confirmationContainer">
       <div class="thankYouMessage">
-        <h2>Thanks! Your order will be on it's way soon.</h2>
+        <h2>Thanks! Your order will be on its way soon.</h2>
       </div>
       <div class="confirmationHeader">
         <h3>Ship To</h3>
@@ -31,7 +31,7 @@ include 'php/validateForm.php';
         <table>
           <tr>
             <th>Name</th>
-            <th>Quanity</th>
+            <th>Quantity</th>
             <th>Price</th>
           </tr>
           <?php

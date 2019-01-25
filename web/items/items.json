@@ -1,7 +1,7 @@
 [
   {
     "id": "cartItem1",
-    "name": "Crossiant",
+    "name": "Croissant",
     "imgURL": "img/items/item1.jpg",
     "price": "2.50"
   },
@@ -13,7 +13,7 @@
   },
   {
     "id": "cartItem3",
-    "name": "French Baguets",
+    "name": "French Baguette",
     "imgURL": "img/items/item3.jpg",
     "price": "4.50"
   },

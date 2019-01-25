@@ -82,15 +82,16 @@ p {
   justify-content: flex-end;
 }
 
-#checkoutButton {
+#checkoutButton, #emptyButton {
   height: 30px;
   background-color: #ffcc66;
   border: none;
   margin-right: 20px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
-#checkoutButton:hover {
+#checkoutButton:hover, #emptyButton:hover {
   box-shadow: 2px 2px 0px 0px #555;
 }
 

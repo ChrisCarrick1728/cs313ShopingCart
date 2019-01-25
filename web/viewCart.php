@@ -32,6 +32,7 @@ include "php/setupCart.php";
         <h2>Total:     $ <span id="cartTotal"><?php echo money_format('%.2n', $cart[0][cartTotal]); ?></span></h2>
       </div>
       <div class="checkoutButton">
+        <button type="button" name="button" id="emptyButton">Empty Cart</button>
         <button type="button" name="button" id="checkoutButton">Proceed to Checkout</button>
       </div>
     </div>

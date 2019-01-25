@@ -15,12 +15,22 @@ include 'php/getItems.php'
   </head>
   <body>
     <?php include 'components/header.php' ?>
+    <div class="viewCartButtonContainer">
+      <div class="viewCartButton">
+        <button type="button" name="button" class="goToCartButton">Go to Cart</button>
+      </div>
+    </div>
     <div class="itemsContainer">
       <?php
-        foreach ($items as $k) {
+        foreach ($items as $key=>$value) {
           include "components/browse.php";
         }
       ?>
+    </div>
+    <div class="viewCartButtonContainer">
+      <div class="viewCartButton">
+        <button type="button" name="button" class="goToCartButton">Go to Cart</button>
+      </div>
     </div>
   </body>
 </html>

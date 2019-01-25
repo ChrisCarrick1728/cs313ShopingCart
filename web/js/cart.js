@@ -2,6 +2,10 @@ $('document').ready(function() {
 
   checkIfCartIsEmpty();
 
+  $('.goToCartButton').click(function() {
+    document.location.href = "viewCart.php";
+  })
+
   $('.addToCartButton').click(function() {
     var id = this.id;
     // ajax call to set session variable
@@ -14,13 +18,13 @@ $('document').ready(function() {
   function updateAfterAdd(data, id) {
     var str = id;
     var newId = str.replace("add", "");
-
     if (data != '') {
       var cart = $.parseJSON(data);
       // Update number of Items in cart
       var numItems = $('#numCartItems').html();
       $('#numCartItems').html(parseInt(numItems) + 1);
       updateCartTotal();
+      $('#q_' + cart['id']).html(cart['quantity'])
       $("#quantity" + newId).html(cart['quantity']);
       $("#cost" + newId).html("$" + (cart['quantity'] * cart['price']).toFixed(2));
 
@@ -58,6 +62,11 @@ $('document').ready(function() {
       $('#cartTotal').html(res.responseText);
     })
   }
+
+  $('#emptyButton').click(function() {
+    $.post('php/clearCart.php');
+    document.location.href = "browse.php";
+  })
 
   $('#checkoutButton').click(function() {
     document.location.href = "checkout.php";
