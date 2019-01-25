@@ -31,8 +31,8 @@ include 'php/validateForm.php';
         <table>
           <tr>
             <th>Name</th>
-            <th>Quantity</th>
-            <th>Price</th>
+            <th class="thQuantity">Quantity</th>
+            <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Price</th>
           </tr>
           <?php
           if ( isset($cart) ) {
@@ -44,8 +44,8 @@ include 'php/validateForm.php';
           }
           ?>
           <tr>
-            <td colspan="2" class="total">Total </td>
-            <td class="totalValue">$ <?php echo money_format('%.2n', $cart[0][cartTotal]); ?></td>
+            <td class="total">Total </td>
+            <td colspan="2" class="totalValue">$ <?php echo money_format('%.2n', $cart[0][cartTotal]); ?></td>
           </tr>
         </table>
       </div>

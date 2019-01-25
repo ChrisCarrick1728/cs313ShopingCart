@@ -1,5 +1,6 @@
 .cartContainer {
   width: 80%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -67,6 +68,7 @@ p {
 
 .cartCheckoutContainer {
   width: 80%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   display: none;

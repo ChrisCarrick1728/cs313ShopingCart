@@ -1,12 +1,14 @@
 .returnToCartNav {
   margin-top: 20px;
   width: 80%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .checkoutFormContainer {
   width: 80%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }

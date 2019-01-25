@@ -1,5 +1,6 @@
 .confirmationContainer {
   width: 80%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -33,10 +34,18 @@
   width: 100%;
 }
 
+table {
+  width: 100%;
+}
+
 th {
   font-family: sans-serif;
   text-align: left;
   padding: 5px 5px;
+}
+
+.thQuantity {
+  text-align: right;
 }
 
 td {
@@ -50,15 +59,15 @@ tr {
 
 .tdName {
   text-indent: 20px;
-  width: 70%;
+  width: 100%;
 }
 
 .tdQuantity {
-  width: 100px;
+  text-align: right;
 }
 
 .tdPrice {
-  width: 100px;
+  text-align: right;
 }
 
 .total {
@@ -72,6 +81,7 @@ tr {
 
 .totalValue {
   border-top: 1px dashed #ccc;
+  text-align: right;
 }
 
 @media only screen and (max-width: 450px) {
