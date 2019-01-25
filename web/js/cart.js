@@ -5,7 +5,7 @@ $('document').ready(function() {
   $('.addToCartButton').click(function() {
     var id = this.id;
     // ajax call to set session variable
-    var res = $.post("php/addToCart.php", { "item" : this.id });
+    var res = $.post("php/addToCart.php", { "item" : this.id })
     res.done(function() {
       updateAfterAdd(res.responseText, id);
     })
