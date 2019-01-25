@@ -1,31 +1,25 @@
 <?php
 session_start();
-$itemsFilename = "../items/items.txt";
+$itemsFilename = "../items/items.json";
 if (!isset($_SESSION['items'])) {
   $_SESSION['items'] = file_get_contents($itemsFilename);
 }
 
-$filename = "../items/cart.txt";
+$filename = "../items/cart.json";
 if (!isset($_SESSION['cart'])) {
-  //$_SESSION['cart'] = array();
-
   $_SESSION['cart'] = file_get_contents($filename);
 }
 
 $pItem = substr($_POST['item'], 4);
-
 $items = (array)json_decode($_SESSION['items'], TRUE);
 $cart = (array)json_decode($_SESSION['cart'], TRUE);
-//echo $_SESSION['cart'];
 $cartItems = $cart[0][cartItems];
-//echo $cartItems[4][id];
 $itemInCart = false;
 $returnItem;
 
 foreach ($cartItems as $item) {
   if ($item[id] == $pItem){
     $itemInCart = true;
-    //echo "Item in cart! ";
   }
 }
 
@@ -51,6 +45,7 @@ if ($itemInCart) {
       $newObj = array("id"=> $value[id],
                  "name" => $value[name] ,
                  "quantity" => "1",
+                 "imgURL" => $value[imgURL],
                  "price" => $value[price]);
 
       // Add new item to cart
@@ -70,7 +65,6 @@ $_SESSION['numItems'] = $cart[0][numItems];
 
 
 $_SESSION['cart'] = json_encode($cart);
-//echo "addkey: " . $returnItem;
 echo json_encode($returnItem);
 
 ?>

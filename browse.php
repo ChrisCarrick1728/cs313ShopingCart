@@ -1,5 +1,7 @@
-<?php session_start(); ?>
-<?php include 'php/getItems.php' ?>
+<?php
+session_start();
+include 'php/getItems.php'
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -13,24 +15,12 @@
   </head>
   <body>
     <?php include 'components/header.php' ?>
-
     <div class="itemsContainer">
-      <?php foreach ($items as $k) { ?>
-      <div class="itemTile">
-        <div class="item">
-          <h3><?php echo $k['name']; ?></h3>
-          <div class="imgContainer">
-            <img src="img/items/item1.jpg" alt="">
-            <div class="priceBackground">
-
-            </div>
-            <p class="price">$ <?php echo $k['price']; ?></p>
-            <p class="addToCart"></p>
-            <input type="button" class="addToCartButton" name="button" value="+" id="<?php echo "add_{$k['id']}"; ?>">
-          </div>
-        </div>
-      </div>
-      <?php } ?>
+      <?php
+        foreach ($items as $k) {
+          include "components/browse.php";
+        }
+      ?>
     </div>
   </body>
 </html>

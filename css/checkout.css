@@ -1,0 +1,79 @@
+.returnToCartNav {
+  margin-top: 20px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.checkoutFormContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 100%;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+td {
+  width: 50%;
+}
+
+td p {
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: right;
+  padding-right: 5px;
+}
+
+.error {
+  color: red;
+}
+
+td input {
+  background-color: #fff;
+  border: none;
+  border: 1px solid #ffcc66;
+  height: 30px;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  text-indent: 10px;
+  border-radius: 5px;
+}
+
+button {
+  height: 30px;
+  background-color: #ffcc66;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 2px 2px 0px 0px #555;
+}
+
+.name {
+  width: 150px;
+}
+
+.address {
+  width: 180px;
+}
+
+.city {
+  width: 100px;
+}
+
+.state {
+  width: 40px;
+}
+
+.zip {
+  width: 60px;
+}

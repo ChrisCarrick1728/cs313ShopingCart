@@ -11,7 +11,6 @@
   </head>
   <body>
     <?php include 'components/header.php'; ?>
-
     <section>
       <div class="jumbotron">
         <div class="mainImg">
@@ -20,8 +19,5 @@
         </div>
       </div>
     </section>
-
-    <footer>
-    </footer>
   </body>
 </html>

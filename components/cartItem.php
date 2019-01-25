@@ -1,7 +1,6 @@
-
 <div class="cartItemTile" id="<?php echo "tile_{$value[id]}"; ?>">
   <div class="cartImg">
-    <img src="img/items/item1.jpg" alt="">
+    <img src="<?php echo "{$value[imgURL]}"; ?>" alt="">
   </div>
   <div class="cartItemName">
     <h2><?php echo $value[name] ?></h2>

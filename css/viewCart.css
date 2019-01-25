@@ -13,7 +13,6 @@
   font-size: 30px;
   color: #777;
   cursor: pointer;
-
 }
 
 .cartItemTile {
@@ -70,14 +69,42 @@ p {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  display: none;
 }
 
 .cartCheckoutContainer h2 {
   text-align: right;
   padding-right: 20px;
+
+}
+.checkoutButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#checkoutButton {
+  height: 30px;
+  background-color: #ffcc66;
+  border: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#checkoutButton:hover {
+  box-shadow: 2px 2px 0px 0px #555;
+}
+
+.emptyCart h2 {
+  font-family: sans-serif;
+  font-weight: lighter;
+  text-align: center;
 }
 
 @media only screen and (max-width: 450px) {
+  .cartCheckoutContainer {
+    width: 100%;
+  }
+
   .cartContainer {
     width: 100%;
   }
@@ -103,6 +130,4 @@ p {
   .cartItemPrice p {
     font-size: 13px;
   }
-
-
 }

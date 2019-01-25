@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php
+session_start();
+include "php/setupCart.php";
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -29,8 +32,11 @@
         <h2>Total:     $ <span id="cartTotal"><?php echo money_format('%.2n', $cart[0][cartTotal]); ?></span></h2>
       </div>
       <div class="checkoutButton">
-        <button type="button" name="button">Proceed to Checkout</button>
+        <button type="button" name="button" id="checkoutButton">Proceed to Checkout</button>
       </div>
+    </div>
+    <div class="emptyCart">
+      <h2>Nothing to see here :( Your cart is empty.</h2>
     </div>
   </body>
 </html>
