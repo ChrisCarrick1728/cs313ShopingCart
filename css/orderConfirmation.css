@@ -44,17 +44,21 @@ td {
   text-align: left;
 }
 
+tr {
+  width: 100%;
+}
+
 .tdName {
   text-indent: 20px;
-  width: 100%;
+  width: 70%;
 }
 
 .tdQuantity {
-  width: 100%;
+  width: 100px;
 }
 
 .tdPrice {
-  width: 100%;
+  width: 100px;
 }
 
 .total {
